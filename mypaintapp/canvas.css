@@ -18,9 +18,7 @@ body{
     width: 90vw;
     height: 80vh;
     overflow: hidden;
-
 }
-
 .toolbar {
     border: 5px solid #008037;
     border-radius: 10px;
@@ -33,14 +31,21 @@ h1 {
     text-align: center;
 }
 
-.panel {
+/* .panel {
     display: flex;
     flex-direction: row;
     /* justify-content: start; */
     /* align-items: center; */
-    border: 2px solid red;
-}
+   /* border: 2px solid red;
+} */
 
+
+.panel {
+    display: block;
+    width: 90%;
+    height: 90vh;
+    margin: auto auto;
+}
 
 /* canvas {
 	cursor: url(crosshair.cur), default;
@@ -58,6 +63,7 @@ button{
     border:none;
     cursor:pointer;
    }
+
 .toolbar{
     padding:0.5rem 0;
     display:flex;
@@ -68,6 +74,7 @@ button{
 }
 
 #left-panel {
+    display: flex;
     margin: auto;
     align-items: center;
     /* display: flex; */
@@ -76,23 +83,11 @@ button{
 
 }
 
-
-.right-panel {
-    cursor: pointer;
-    display: block;
-    margin: 2rem auto;
-    width: 100%;
-    height: 60vh;
-    background: whitesmoke;
-    border:20px solid #804500;
-}
-
-
-
 #brushWidth {
     max-width: 100%;
-    min-height: 100px;
-    /* display: flex; */
+    height: 120px;
+    padding-top: 1rem;
+    display: block;
     justify-content: center;
     align-items: center;
     /* border:2px solid black; */
@@ -117,16 +112,25 @@ input {
 }
 
 .input-form {
-    display: flex;
-
+    display: block;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    /* padding:1rem 0; */
 }
 
+.right-panel {
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto;
+    width: 100%;
+    height: 60vh;
+    background: whitesmoke;
+    border:20px solid #804500;
+}
 .color-panel {
     background: whitesmoke;
     display: grid;
+    height: 120px;
     grid-template-columns: repeat(12, 20px);
     /* grid-template-rows: repeat(auto-fill, minmax(20px, reapeat(1fr)) );   */
     /* width:100%; */
@@ -273,8 +277,7 @@ input {
         align-items: center;
         width: 100%;
         height: auto;
-        
-
+        border: 2px solid red;
     }
 
     .toolbar {
@@ -290,6 +293,7 @@ input {
         margin-left:-40px;
     } */
 #left-panel {
+        display: block;
         width: 15%;
         margin-top:1rem;
 
@@ -304,6 +308,7 @@ input {
 
     .color-panel {
         /* display:grid; */
+        height: 100%;
         grid-template-columns: repeat(3, 20px);
         grid-template-rows: repeat(3, 20px);
         /* width:100%; */
@@ -319,11 +324,10 @@ input {
     }
 
 
-
     #brushWidth {
         text-align: center;
         width: 100%;
-        height: 90px;
+        height: 100px;
         padding: 0.5rem 0rem;
         display: block;
         border:10px solid #804500;
@@ -333,17 +337,16 @@ input {
         /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     }
 
+    #manualInput {
+        width: 30%;
+        text-align: center;
+    }
+
     #brushWidth p {
         margin: 0 auto;
         text-align: center;
-        width: 150px;
+        width: 100%;
     }
-
-    input {
-        /* margin-top: 0.5rem; */
-
-    }
-
 
     .input-form{
         display:block;
@@ -352,8 +355,6 @@ input {
         align-items: center;
         /* /* padding:0.5rem 0; */
     }
-
-
 
 
 }
