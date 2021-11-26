@@ -162,8 +162,8 @@ function changeColors(palette) {
 		case "purple2":
 			colors = "#E3ABCE";
 			break;
-		case "erase":
-			colors = "white";
+		case "eraser":
+			colors = "whitesmoke";
 			break;
 	}
 };
