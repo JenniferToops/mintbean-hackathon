@@ -20,6 +20,7 @@ body{
     border-radius: 10px;
     justify-content: space-around;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -69,10 +70,6 @@ button{
     justify-content: center;
     align-items: center;
     border:20px solid #804500;
-    /* display: flex; */
-    /* width:100%; */
-    /* border:2px solid black; */
-
 }
 
 #brushWidth {
